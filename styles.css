@@ -1,0 +1,54 @@
+.banner_text{
+    text-align: center;
+    background-color: lightblue;
+    border-bottom: 1px solid black;
+    margin: 0px
+  }
+  h1{
+    font-size: 2rem;
+  }
+  
+  .buttons{
+    margin: 10px 5px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    width: 75px;
+    height: 2rem;
+    color: black;
+    background-color: beige;
+    border: 1px solid black;
+   
+  }
+  .buttons:active{
+    background-color: lightgrey;
+  }
+  .buttons:focus{
+    outline: #38555F outset 1px;
+  }
+  
+  .container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  .output{
+    background-color: beige;
+    color: blue;
+    height: 200px;
+    width: 300px;
+    margin: 10px auto;
+    border: 1px solid black;
+    border-radius: 15px;
+  }
+  body{
+    background-color: grey;
+  }
+  h2{
+      margin-left: 5px;
+  }
+  .gameScore{
+      white-space: nowrap;
+      display: inline;
+      margin: 5px 5px 5px 5px;
+      
+   
+  }

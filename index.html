@@ -1,46 +1,30 @@
-<script>
-const rps = ['Rock','Paper', 'scissors'];
+<!doctype html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <script defer rel="text/javascript" src="/home/pmargetis/the_odin_project/RockPaperScissors/script.js"></script>
+        <link rel="stylesheet" href="/home/pmargetis/the_odin_project/RockPaperScissors/styles.css">
+    </head>
+    <body>
+        <main>
+            <h1 class="banner_text">Rock Paper Scissors</h1>
+            <div class="container" id="button">
+                <button class="buttons" id="rock" type="button">Rock</button>
+                <button class="buttons" id="paper" type="button">Paper</button>
+                <button class="buttons" id="scissors" type="button">Scissors</button>
+            </div>
+            <div class="output">
+                <h2>Console:</h2>
+                <p id="gameScore" class="gameScore">Lets Play!</p>
+                <h2>Score:</h2>
+                <div class="gameScore">
+                    <p class="gameScore" id="gamePlayer">Player:</p>
+                    <p class="gameScore" id="PlayerScores"></p>
+                    <p class="gameScore" id="gameComputer">Computer:</p>
+                    <p class="gameScore" id="computerScores"></p>
+                </div>
+            </div>
+        </main>
 
-function playerSelection(rps) {
-    prompt('Rock, Paper, Scissors; choose one')
-    return rps[Math.floor(Math.random() * rps.length)];
- 
-}
-
-function computerSelection(rps){
-  return rps[Math.floor(Math.random() * rps.length)];
-}
-
-function playRound(playerSelection, computerSelection) {
-	if (playerSelection === computerSelection){
-        return "It's a tie!!";
-    }  
-    else if (playerSelection === "Rock"){
-        if (computerSelection === "Scissors"){
-            return "You win, Rock beats Scissors!!";
-        } 
-        else {
-            return "You lose, Paper beats Rock.";
-        } 
-    } 
-    else if (playerSelection === "Paper")  {
-        if (computerSelection === "rock") {
-            return "You win, Paper beats rock!!";
-        }
-        else {
-            return "You lose, Scissors beats Pape.r";
-        }
-    }
-    else if (playerSelection === "Scissors"){
-        if (computerSelection === "Paper"){
-            return "You win, Scissors beats Paper!!";
-        }
-        else return "You lose, Rock beats Scissors."
-    }   
-}
-
-const playerSelection = 'rock'
-const computerSelection = computerPlay()
-console.log(playRound(playerSelection, computerSelection))
-
-</script>
+    </body>
+</html>
