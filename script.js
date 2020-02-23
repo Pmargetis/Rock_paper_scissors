@@ -1,6 +1,6 @@
 const rps = ['Rock','Paper', 'Scissors'];
-let playerScore = 0
-let computerScore = 0
+let playerScore = _short("PlayerScores").innerHTML =  0
+let computerScore = _short("computerScores").innerHTML = 0
 
 function _short(id) {
     return document.getElementById(id);

@@ -2,10 +2,11 @@
     text-align: center;
     background-color: lightblue;
     border-bottom: 1px solid black;
-    margin: 0px
   }
-  h1{
+  
+  header{
     font-size: 2rem;
+    width: 100%;
   }
   
   .buttons{
@@ -49,6 +50,5 @@
       white-space: nowrap;
       display: inline;
       margin: 5px 5px 5px 5px;
-      
-   
   }
+  
